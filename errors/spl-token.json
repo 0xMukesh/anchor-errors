@@ -1,0 +1,102 @@
+[
+  {
+    "code": "0",
+    "error": "NotRentExempt",
+    "message": "Lamport balance below rent-exempt threshold"
+  },
+  {
+    "code": "1",
+    "error": "InsufficientFunds",
+    "message": "Insufficient funds for the operation requested"
+  },
+  {
+    "code": "2",
+    "error": "InvalidMint",
+    "message": "Invalid mint"
+  },
+  {
+    "code": "3",
+    "error": "MintMismatch",
+    "message": "Account not associated with this mint"
+  },
+  {
+    "code": "4",
+    "error": "OwnerMismatch",
+    "message": "Owner does not match"
+  },
+  {
+    "code": "5",
+    "error": "FixedSupply",
+    "message": "The token's supply is fixed and new tokens cannot be minted"
+  },
+  {
+    "code": "6",
+    "error": "AlreadyInUse",
+    "message": "The account cannot be initialized because it is already being used"
+  },
+  {
+    "code": "7",
+    "error": "InvalidNumberOfProvidedSigners",
+    "message": "Invalid number of provided signers"
+  },
+  {
+    "code": "8",
+    "error": "InvalidNumberOfRequiredSigners",
+    "message": "Invalid number of required signers"
+  },
+  {
+    "code": "9",
+    "error": "UninitializedState",
+    "message": "State is uninitialized"
+  },
+  {
+    "code": "10",
+    "error": "NativeNotSupported",
+    "message": "Instruction does not support native tokens"
+  },
+  {
+    "code": "11",
+    "error": "NonNativeHasBalance",
+    "message": "Non-native account can only be closed if its balance is zero"
+  },
+  {
+    "code": "12",
+    "error": "InvalidInstruction",
+    "message": "Invalid instruction"
+  },
+  {
+    "code": "13",
+    "error": "InvalidState",
+    "message": "State is invalid for requested operation"
+  },
+  {
+    "code": "14",
+    "error": "Overflow",
+    "message": "Operation overflowed"
+  },
+  {
+    "code": "15",
+    "error": "AuthorityTypeNotSupported",
+    "message": "Account does not support specified authority type"
+  },
+  {
+    "code": "16",
+    "error": "MintCannotFreeze",
+    "message": "This token mint cannot freeze accounts."
+  },
+  {
+    "code": "17",
+    "error": "AccountFrozen",
+    "message": "Account is frozen; all account operations will fail"
+  },
+  {
+    "code": "18",
+    "error": "MintDecimalsMismatch",
+    "message": "Mint decimals mismatch between the client and mint"
+  },
+  {
+    "code": "19",
+    "error": "NonNativeNotSupported",
+    "message": "Instruction does not support non-native tokens"
+  }
+]

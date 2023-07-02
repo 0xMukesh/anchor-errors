@@ -1,0 +1,10 @@
+[
+  {
+    "name": "anchor",
+    "description": "native anchor framework errors"
+  },
+  {
+    "name": "spl-token",
+    "description": "spl-token errors"
+  }
+]
