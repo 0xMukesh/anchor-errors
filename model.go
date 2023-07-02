@@ -2,60 +2,48 @@ package main
 
 import (
 	"fmt"
-	"strconv"
 
 	"github.com/charmbracelet/bubbles/list"
 	tea "github.com/charmbracelet/bubbletea"
 )
 
-type model struct {
+type Model struct {
 	list list.Model
 }
 
-type errors struct {
+type ErrorCode struct {
 	Code    string `json:"code"`
 	Error   string `json:"error"`
 	Message string `json:"message"`
 }
 
-type program struct {
+type Program struct {
 	Name string `json:"name"`
 }
 
-func (e errors) Title() string { return e.Error }
-func (e errors) Description() string {
-	code, err := strconv.Atoi(e.Code)
-	if err != nil {
-		fmt.Print(err)
-	}
-	hex := fmt.Sprintf("%x", code)
-	return "0x" + hex + " - " + e.Message
+func (e ErrorCode) Title() string { return e.Error }
+func (e ErrorCode) Description() string {
+	hex := strToHex(e.Code)
+	return hex + " - " + e.Message
 }
-func (e errors) FilterValue() string {
-	code, err := strconv.Atoi(e.Code)
-	if err != nil {
-		fmt.Print(err)
-	}
-	hex := fmt.Sprintf("%x", code)
-	return "0x" + hex
-}
+func (e ErrorCode) FilterValue() string { return strToHex(e.Code) }
 
-func (p program) Title() string { return p.Name }
-func (p program) Description() string {
+func (p Program) Title() string { return p.Name }
+func (p Program) Description() string {
 	switch p.Name {
 	case "anchor":
 		return "native anchor framework errors"
 	default:
-		return fmt.Sprintf("errors due to %s program", p.Name)
+		return fmt.Sprintf("errors of %s program", p.Name)
 	}
 }
-func (p program) FilterValue() string { return p.Name }
+func (p Program) FilterValue() string { return p.Name }
 
-func (m model) Init() tea.Cmd {
+func (m Model) Init() tea.Cmd {
 	return nil
 }
 
-func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
+func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch msg := msg.(type) {
 	case tea.KeyMsg:
 		switch msg.Type {
@@ -72,6 +60,6 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	return m, cmd
 }
 
-func (m model) View() string {
+func (m Model) View() string {
 	return docStyle.Render(m.list.View())
 }

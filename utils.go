@@ -5,6 +5,9 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"path/filepath"
+	"strconv"
+	"strings"
 )
 
 func parseJsonFile[T interface{}](path string) (T, error) {
@@ -24,9 +27,9 @@ func parseJsonFile[T interface{}](path string) (T, error) {
 	return data, nil
 }
 
-func getErrorCodes(program string) ([]errors, error) {
-	path := fmt.Sprintf("errors/%s.json", program)
-	errors, err := parseJsonFile[[]errors](path)
+func getErrorCodes(program string) ([]ErrorCode, error) {
+	path := fmt.Sprintf("%s/%s.json", errorCodesDir, program)
+	errors, err := parseJsonFile[[]ErrorCode](path)
 	if err != nil {
 		fmt.Println(err)
 		return errors, err
@@ -34,11 +37,33 @@ func getErrorCodes(program string) ([]errors, error) {
 	return errors, nil
 }
 
-func getAllPrograms() ([]program, error) {
-	programs, err := parseJsonFile[[]program]("programs.json")
+func getAllPrograms() ([]Program, error) {
+	var programs []Program
+	dir, err := os.ReadDir(errorCodesDir)
 	if err != nil {
 		fmt.Println(err)
 		return programs, err
 	}
+
+	for _, p := range dir {
+		info, err := p.Info()
+		if err != nil {
+			fmt.Println(err)
+			return programs, err
+		}
+		name := strings.TrimSuffix(info.Name(), filepath.Ext(info.Name()))
+		programs = append(programs, Program{
+			Name: name,
+		})
+	}
 	return programs, nil
+}
+
+func strToHex(str string) string {
+	code, err := strconv.Atoi(str)
+	if err != nil {
+		fmt.Print(err)
+	}
+	hex := fmt.Sprintf("%x", code)
+	return "0x" + hex
 }

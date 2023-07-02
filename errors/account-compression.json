@@ -1,0 +1,17 @@
+[
+  {
+    "code": "1",
+    "error": "IncorrectLeafLength",
+    "message": "Incorrect leaf length. Expected vec of 32 bytes"
+  },
+  {
+    "code": "2",
+    "error": "ConcurrentMerkleTreeError",
+    "message": "Concurrent merkle tree error"
+  },
+  {
+    "code": "3",
+    "error": "ZeroCopyError",
+    "message": "Issue zero copying concurrent merkle tree data"
+  }
+]

@@ -6,10 +6,7 @@ import (
 
 	"github.com/charmbracelet/bubbles/list"
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/charmbracelet/lipgloss"
 )
-
-var docStyle = lipgloss.NewStyle().Margin(1, 2)
 
 func main() {
 	programs, err := getAllPrograms()
@@ -21,7 +18,7 @@ func main() {
 	for _, program := range programs {
 		items = append(items, program)
 	}
-	m := model{list: list.New(items, listDelegate(), 0, 0)}
+	m := Model{list: list.New(items, listDelegate(), 0, 0)}
 	m.list.Title = "anchor-errors"
 
 	p := tea.NewProgram(m, tea.WithAltScreen())

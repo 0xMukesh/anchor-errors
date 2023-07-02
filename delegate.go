@@ -43,7 +43,7 @@ func listDelegate() list.DefaultDelegate {
 		var title string
 		var items []list.Item
 
-		if i, ok := m.SelectedItem().(program); ok {
+		if i, ok := m.SelectedItem().(Program); ok {
 			title = i.Title()
 		} else {
 			return nil
