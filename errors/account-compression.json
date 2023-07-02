@@ -2,46 +2,55 @@
   {
     "code": "0",
     "error": "IncorrectLeafLength",
+    "program": "account-compression",
     "message": "Incorrect leaf length. Expected vec of 32 bytes"
   },
   {
     "code": "1",
     "error": "ConcurrentMerkleTreeError",
+    "program": "account-compression",
     "message": "Concurrent merkle tree error"
   },
   {
     "code": "2",
     "error": "ZeroCopyError",
+    "program": "account-compression",
     "message": "Issue zero copying concurrent merkle tree data"
   },
   {
     "code": "3",
     "error": "ConcurrentMerkleTreeConstantsError",
+    "program": "account-compression",
     "message": "An unsupported max depth or max buffer size constant was provided"
   },
   {
     "code": "4",
     "error": "CanopyLengthMismatch",
+    "program": "account-compression",
     "message": "Expected a different byte length for the merkle tree canopy"
   },
   {
     "code": "5",
     "error": "IncorrectAuthority",
+    "program": "account-compression",
     "message": "Provided authority does not match expected tree authority"
   },
   {
     "code": "6",
     "error": "IncorrectAccountOwner",
+    "program": "account-compression",
     "message": "Account is owned by a different program, expected it to be owned by this program"
   },
   {
     "code": "7",
     "error": "IncorrectAccountType",
+    "program": "account-compression",
     "message": "Account provided has incorrect account type"
   },
   {
     "code": "8",
     "error": "LeafIndexOutOfBounds",
+    "program": "account-compression",
     "message": "Leaf index of concurrent merkle tree is out of bounds"
   }
 ]

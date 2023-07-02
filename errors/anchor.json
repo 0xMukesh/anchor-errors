@@ -2,136 +2,163 @@
   {
     "code": "100",
     "error": "InstructionMissing",
+    "program": "anchor",
     "message": "8 byte instruction identifier not provided "
   },
   {
     "code": "101",
     "error": "InstructionFallbackNotFound",
+    "program": "anchor",
     "message": "Fallback functions are not supported "
   },
   {
     "code": "102",
     "error": "InstructionDidNotDeserialize",
+    "program": "anchor",
     "message": "The program could not deserialize the given instruction "
   },
   {
     "code": "103",
     "error": "InstructionDidNotSerialize",
+    "program": "anchor",
     "message": "The program could not serialize the given instruction "
   },
   {
     "code": "120",
     "error": "IdlInstructionStub",
+    "program": "anchor",
     "message": "The program was compiled without idl instructions "
   },
   {
     "code": "121",
     "error": "IdlInstructionInvalidProgram",
+    "program": "anchor",
     "message": "The transaction was given an invalid program for the IDL instruction "
   },
   {
     "code": "140",
     "error": "ConstraintMut",
+    "program": "anchor",
     "message": "A mut constraint was violated"
   },
   {
     "code": "141",
     "error": "ConstraintBelongsTo",
+    "program": "anchor",
     "message": "A belongs_to constraint was violated"
   },
   {
     "code": "142",
     "error": "ConstraintSigner",
+    "program": "anchor",
     "message": "A signer constraint was violated"
   },
   {
     "code": "143",
     "error": "ConstraintRaw",
+    "program": "anchor",
     "message": "A raw constraint as violated"
   },
   {
     "code": "144",
     "error": "ConstraintOwner",
+    "program": "anchor",
     "message": "An owner constraint was violated"
   },
   {
     "code": "145",
     "error": "ConstraintRentExempt",
+    "program": "anchor",
     "message": "A rent exempt constraint was violated"
   },
   {
     "code": "146",
     "error": "ConstraintSeeds",
+    "program": "anchor",
     "message": "A seeds constraint was violated"
   },
   {
     "code": "147",
     "error": "ConstraintExecutable",
+    "program": "anchor",
     "message": "An executable constraint was violated"
   },
   {
     "code": "148",
     "error": "ConstraintState",
+    "program": "anchor",
     "message": "A state constraint was violated"
   },
   {
     "code": "149",
     "error": "ConstraintAssociated",
+    "program": "anchor",
     "message": "An associated constraint was violated"
   },
   {
     "code": "150",
     "error": "ConstraintAssociatedInit",
+    "program": "anchor",
     "message": "An associated init constraint was violated"
   },
   {
     "code": "160",
     "error": "AccountDiscriminatorAlreadySet",
+    "program": "anchor",
     "message": "The account discriminator was already set on this account"
   },
   {
     "code": "161",
     "error": "AccountDiscriminatorNotFound",
+    "program": "anchor",
     "message": "No 8 byte discriminator was found on the account"
   },
   {
     "code": "162",
     "error": "AccountDiscriminatorMismatch",
+    "program": "anchor",
     "message": "8 byte discriminator did not match what was expected"
   },
   {
     "code": "163",
     "error": "AccountDidNotDeserialize",
+    "program": "anchor",
     "message": "Failed to deserialize the account"
   },
   {
     "code": "164",
     "error": "AccountDidNotSerialize",
+    "program": "anchor",
     "message": "Failed to serialize the account"
   },
   {
     "code": "165",
     "error": "AccountNotEnoughKeys",
+    "program": "anchor",
     "message": "Not enough account keys given to the instruction "
   },
   {
     "code": "166",
     "error": "AccountNotMutable",
+    "program": "anchor",
     "message": "The given account is not mutable"
   },
   {
     "code": "167",
     "error": "AccountNotProgramOwned ",
+    "program": "anchor",
     "message": "The given account is not owned by the executing program"
   },
   {
     "code": "180",
     "error": "StateInvalidAddress ",
+    "program": "anchor",
     "message": "The given state account does not have the correct address"
   },
   {
     "code": "299",
     "error": "Deprecated ",
+    "program": "anchor",
     "message": "The API being used is deprecated and should no longer be used"
   }
 ]

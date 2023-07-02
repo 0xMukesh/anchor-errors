@@ -2,101 +2,121 @@
   {
     "code": "0",
     "error": "NotRentExempt",
+    "program": "spl-token",
     "message": "Lamport balance below rent-exempt threshold"
   },
   {
     "code": "1",
     "error": "InsufficientFunds",
+    "program": "spl-token",
     "message": "Insufficient funds for the operation requested"
   },
   {
     "code": "2",
     "error": "InvalidMint",
+    "program": "spl-token",
     "message": "Invalid mint"
   },
   {
     "code": "3",
     "error": "MintMismatch",
+    "program": "spl-token",
     "message": "Account not associated with this mint"
   },
   {
     "code": "4",
     "error": "OwnerMismatch",
+    "program": "spl-token",
     "message": "Owner does not match"
   },
   {
     "code": "5",
     "error": "FixedSupply",
+    "program": "spl-token",
     "message": "The token's supply is fixed and new tokens cannot be minted"
   },
   {
     "code": "6",
     "error": "AlreadyInUse",
+    "program": "spl-token",
     "message": "The account cannot be initialized because it is already being used"
   },
   {
     "code": "7",
     "error": "InvalidNumberOfProvidedSigners",
+    "program": "spl-token",
     "message": "Invalid number of provided signers"
   },
   {
     "code": "8",
     "error": "InvalidNumberOfRequiredSigners",
+    "program": "spl-token",
     "message": "Invalid number of required signers"
   },
   {
     "code": "9",
     "error": "UninitializedState",
+    "program": "spl-token",
     "message": "State is uninitialized"
   },
   {
     "code": "10",
     "error": "NativeNotSupported",
+    "program": "spl-token",
     "message": "Instruction does not support native tokens"
   },
   {
     "code": "11",
     "error": "NonNativeHasBalance",
+    "program": "spl-token",
     "message": "Non-native account can only be closed if its balance is zero"
   },
   {
     "code": "12",
     "error": "InvalidInstruction",
+    "program": "spl-token",
     "message": "Invalid instruction"
   },
   {
     "code": "13",
     "error": "InvalidState",
+    "program": "spl-token",
     "message": "State is invalid for requested operation"
   },
   {
     "code": "14",
     "error": "Overflow",
+    "program": "spl-token",
     "message": "Operation overflowed"
   },
   {
     "code": "15",
     "error": "AuthorityTypeNotSupported",
+    "program": "spl-token",
     "message": "Account does not support specified authority type"
   },
   {
     "code": "16",
     "error": "MintCannotFreeze",
+    "program": "spl-token",
     "message": "This token mint cannot freeze accounts."
   },
   {
     "code": "17",
     "error": "AccountFrozen",
+    "program": "spl-token",
     "message": "Account is frozen; all account operations will fail"
   },
   {
     "code": "18",
     "error": "MintDecimalsMismatch",
+    "program": "spl-token",
     "message": "Mint decimals mismatch between the client and mint"
   },
   {
     "code": "19",
     "error": "NonNativeNotSupported",
+    "program": "spl-token",
     "message": "Instruction does not support non-native tokens"
   }
 ]

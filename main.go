@@ -18,7 +18,7 @@ func main() {
 	for _, program := range programs {
 		items = append(items, program)
 	}
-	m := Model{list: list.New(items, listDelegate(), 0, 0)}
+	m := Model{list: list.New(items, list.NewDefaultDelegate(), 0, 0)}
 	m.list.Title = "anchor-errors"
 
 	p := tea.NewProgram(m, tea.WithAltScreen())

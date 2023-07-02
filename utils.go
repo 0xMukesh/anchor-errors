@@ -4,8 +4,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"log"
 	"os"
+	"os/exec"
 	"path/filepath"
+	"runtime"
 	"strconv"
 	"strings"
 )
@@ -52,8 +55,10 @@ func getAllPrograms() ([]Program, error) {
 			return programs, err
 		}
 		name := strings.TrimSuffix(info.Name(), filepath.Ext(info.Name()))
+		source := errorCodesSource[name]
 		programs = append(programs, Program{
-			Name: name,
+			Name:   name,
+			Source: source,
 		})
 	}
 	return programs, nil
@@ -66,4 +71,22 @@ func strToHex(str string) string {
 	}
 	hex := fmt.Sprintf("%x", code)
 	return "0x" + hex
+}
+
+func openLinkInBrowser(url string) {
+	var err error
+
+	switch runtime.GOOS {
+	case "linux":
+		err = exec.Command("xdg-open", url).Start()
+	case "windows":
+		err = exec.Command("rundll32", "url.dll,FileProtocolHandler", url).Start()
+	case "darwin":
+		err = exec.Command("open", url).Start()
+	default:
+		err = fmt.Errorf("unsupported platform")
+	}
+	if err != nil {
+		log.Fatal(err)
+	}
 }

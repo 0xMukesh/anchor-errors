@@ -2,266 +2,319 @@
   {
     "code": "0",
     "error": "NotRentExempt",
+    "program": "spl-token-2022",
     "message": "Lamport balance below rent-exempt threshold"
   },
   {
     "code": "1",
     "error": "InsufficientFunds",
+    "program": "spl-token-2022",
     "message": "Insufficient funds for the operation requested"
   },
   {
     "code": "2",
     "error": "InvalidMint",
+    "program": "spl-token-2022",
     "message": "Invalid mint"
   },
   {
     "code": "3",
     "error": "MintMismatch",
+    "program": "spl-token-2022",
     "message": "Account not associated with this mint"
   },
   {
     "code": "4",
     "error": "OwnerMismatch",
+    "program": "spl-token-2022",
     "message": "Owner does not match"
   },
   {
     "code": "5",
     "error": "FixedSupply",
+    "program": "spl-token-2022",
     "message": "The token's supply is fixed and new tokens cannot be minted"
   },
   {
     "code": "6",
     "error": "AlreadyInUse",
+    "program": "spl-token-2022",
     "message": "The account cannot be initialized because it is already being used"
   },
   {
     "code": "7",
     "error": "InvalidNumberOfProvidedSigners",
+    "program": "spl-token-2022",
     "message": "Invalid number of provided signers"
   },
   {
     "code": "8",
     "error": "InvalidNumberOfRequiredSigners",
+    "program": "spl-token-2022",
     "message": "Invalid number of required signers"
   },
   {
     "code": "9",
     "error": "UninitializedState",
+    "program": "spl-token-2022",
     "message": "State is uninitialized"
   },
   {
     "code": "10",
     "error": "NativeNotSupported",
+    "program": "spl-token-2022",
     "message": "Instruction does not support native tokens"
   },
   {
     "code": "11",
     "error": "NonNativeHasBalance",
+    "program": "spl-token-2022",
     "message": "Non-native account can only be closed if its balance is zero"
   },
   {
     "code": "12",
     "error": "InvalidInstruction",
+    "program": "spl-token-2022",
     "message": "Invalid instruction"
   },
   {
     "code": "13",
     "error": "InvalidState",
+    "program": "spl-token-2022",
     "message": "State is invalid for requested operation"
   },
   {
     "code": "14",
     "error": "Overflow",
+    "program": "spl-token-2022",
     "message": "Operation overflowed"
   },
   {
     "code": "15",
     "error": "AuthorityTypeNotSupported",
+    "program": "spl-token-2022",
     "message": "Account does not support specified authority type"
   },
   {
     "code": "16",
     "error": "MintCannotFreeze",
+    "program": "spl-token-2022",
     "message": "This token mint cannot freeze accounts."
   },
   {
     "code": "17",
     "error": "AccountFrozen",
+    "program": "spl-token-2022",
     "message": "Account is frozen; all account operations will fail"
   },
   {
     "code": "18",
     "error": "MintDecimalsMismatch",
+    "program": "spl-token-2022",
     "message": "Mint decimals mismatch between the client and mint"
   },
   {
     "code": "19",
     "error": "NonNativeNotSupported",
+    "program": "spl-token-2022",
     "message": "Instruction does not support non-native tokens"
   },
   {
     "code": "20",
     "error": "ExtensionTypeMismatch",
+    "program": "spl-token-2022",
     "message": "Extension type does not match already existing extensions"
   },
   {
     "code": "21",
     "error": "ExtensionBaseMismatch",
+    "program": "spl-token-2022",
     "message": "Extension does not match the base type provided"
   },
   {
     "code": "22",
     "error": "ExtensionAlreadyInitialized",
+    "program": "spl-token-2022",
     "message": "Extension already initialized on this account"
   },
   {
     "code": "23",
     "error": "ConfidentialTransferAccountHasBalance",
+    "program": "spl-token-2022",
     "message": "An account can only be closed if its confidential balance is zero"
   },
   {
     "code": "24",
     "error": "ConfidentialTransferAccountNotApproved",
+    "program": "spl-token-2022",
     "message": "Account not approved for confidential transfers"
   },
   {
     "code": "25",
     "error": "ConfidentialTransferDepositsAndTransfersDisabled",
+    "program": "spl-token-2022",
     "message": "Account not accepting deposits or transfers"
   },
   {
     "code": "26",
     "error": "ConfidentialTransferElGamalPubkeyMismatch",
+    "program": "spl-token-2022",
     "message": "ElGamal public key mismatch"
   },
   {
     "code": "27",
     "error": "ConfidentialTransferBalanceMismatch",
+    "program": "spl-token-2022",
     "message": "Balance mismatch"
   },
   {
     "code": "28",
     "error": "MintHasSupply",
+    "program": "spl-token-2022",
     "message": "Mint has non-zero supply. Burn all tokens before closing the mint"
   },
   {
     "code": "29",
     "error": "NoAuthorityExists",
+    "program": "spl-token-2022",
     "message": "No authority exists to perform the desired operation"
   },
   {
     "code": "30",
     "error": "TransferFeeExceedsMaximum",
+    "program": "spl-token-2022",
     "message": "Transfer fee exceeds maximum of 10,000 basis points"
   },
   {
     "code": "31",
     "error": "MintRequiredForTransfer",
+    "program": "spl-token-2022",
     "message": "Mint required for this account to transfer tokens, use `transfer_checked` or `transfer_checked_with_fee`"
   },
   {
     "code": "32",
     "error": "FeeMismatch",
+    "program": "spl-token-2022",
     "message": "Calculated fee does not match expected fee"
   },
   {
     "code": "33",
     "error": "FeeParametersMismatch",
+    "program": "spl-token-2022",
     "message": "Fee parameters associated with zero-knowledge proofs do not match fee parameters in mint"
   },
   {
     "code": "34",
     "error": "ImmutableOwner",
+    "program": "spl-token-2022",
     "message": "The owner authority cannot be changed"
   },
   {
     "code": "35",
     "error": "AccountHasWithheldTransferFees",
+    "program": "spl-token-2022",
     "message": "An account can only be closed if its withheld fee balance is zero, harvest fees to the mint and try again"
   },
   {
     "code": "36",
     "error": "NoMemo",
+    "program": "spl-token-2022",
     "message": "No memo in previous instruction; required for recipient to receive a transfer"
   },
   {
     "code": "37",
     "error": "NonTransferable",
+    "program": "spl-token-2022",
     "message": "Transfer is disabled for this mint"
   },
   {
     "code": "38",
     "error": "NonTransferableNeedsImmutableOwnership",
+    "program": "spl-token-2022",
     "message": "Non-transferable tokens can't be minted to an account without immutable ownership"
   },
   {
     "code": "39",
     "error": "MaximumPendingBalanceCreditCounterExceeded",
+    "program": "spl-token-2022",
     "message": "The total number of `Deposit` and `Transfer` instructions to an account cannot exceed the associated `maximum_pending_balance_credit_counter`"
   },
   {
     "code": "40",
     "error": "MaximumDepositAmountExceeded",
+    "program": "spl-token-2022",
     "message": "Deposit amount exceeds maximum limit"
   },
   {
     "code": "41",
     "error": "CpiGuardSettingsLocked",
+    "program": "spl-token-2022",
     "message": "CPI Guard cannot be enabled or disabled in CPI"
   },
   {
     "code": "42",
     "error": "CpiGuardTransferBlocked",
+    "program": "spl-token-2022",
     "message": "CPI Guard is enabled, and a program attempted to transfer user funds via CPI without using a delegate"
   },
   {
     "code": "43",
     "error": "CpiGuardBurnBlocked",
+    "program": "spl-token-2022",
     "message": "CPI Guard is enabled, and a program attempted to burn user funds via CPI without using a delegate"
   },
   {
     "code": "44",
     "error": "CpiGuardCloseAccountBlocked",
+    "program": "spl-token-2022",
     "message": "CPI Guard is enabled, and a program attempted to close an account via CPI without returning lamports to owner"
   },
   {
     "code": "45",
     "error": "CpiGuardApproveBlocked",
+    "program": "spl-token-2022",
     "message": "CPI Guard is enabled, and a program attempted to approve a delegate via CPI"
   },
   {
     "code": "46",
     "error": "CpiGuardSetAuthorityBlocked",
+    "program": "spl-token-2022",
     "message": "CPI Guard is enabled, and a program attempted to add or replace an authority via CPI"
   },
   {
     "code": "47",
     "error": "CpiGuardOwnerChangeBlocked",
+    "program": "spl-token-2022",
     "message": "Account ownership cannot be changed while CPI Guard is enabled"
   },
   {
     "code": "48",
     "error": "ExtensionNotFound",
+    "program": "spl-token-2022",
     "message": "Extension not found in account data"
   },
   {
     "code": "49",
     "error": "NonConfidentialTransfersDisabled",
+    "program": "spl-token-2022",
     "message": "Non-confidential transfers disabled"
   },
   {
     "code": "50",
     "error": "ConfidentialTransferFeeAccountHasWithheldFee",
+    "program": "spl-token-2022",
     "message": "An account can only be closed if the confidential withheld fee is zero"
   },
   {
     "code": "51",
     "error": "InvalidExtensionCombination",
+    "program": "spl-token-2022",
     "message": "A mint or an account is initialized to an invalid combination of extensions"
   },
   {
     "code": "52",
     "error": "InvalidLengthForAlloc",
+    "program": "spl-token-2022",
     "message": "Extension allocation with overwrite must use the same length"
   }
 ]
